@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RockPaperScissor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <span><button class="topbtn" onclick="myFunction()">Toggle MODE</button></span>
+     <main>  
+        <div class="container">
+        <h1>Let's play Rock, Paper, Scissors!</h1>
+        
+        <details class="rules-container">
+            <summary>Rules to the game</summary>
+    
+            <p>You can choose between Rock, Paper, and Scissors.The first one to three points wins.</p>
+
+            <p>Here are the rules to getting a point in the game:
+            <ul>
+            <b><li>Rock beats Scissors</li></b>  
+            <b><li>Scissors beats Paper</li></b> 
+            <b><li>Paper beats Rock</li></b> 
+            </ul></p>
+            <p>
+              If the player and computer choose the same option (Ex. Paper and
+              Paper), then no one gets the point.
+            </p>
+          </details>
+        <div class="players">
+            <span>Your Score: <span class="score1player">0</span></span>
+            <span>Your Enemy Score: <span class="score2computer">0</span></span>
+        </div>
+        <div class="gameContainer">
+            <h3 class="command">Choose an Option: </h3>
+            <span class="btnspan"> 
+                <button type="button" class="btn rock"><img src="https://github.com/AtharvaKulkarniIT/Rock-Paper-Scissor/blob/main/rock1.png?raw=true" alt="ROCK">
+                    </button> 
+                <button type="button" class="btn paper"><img src="https://github.com/AtharvaKulkarniIT/Rock-Paper-Scissor/blob/main/paper1.png?raw=true" alt="PAPER">
+                    </button>
+                <button type="button" class="btn scissor"><img src="https://github.com/AtharvaKulkarniIT/Rock-Paper-Scissor/blob/main/scissor1.png?raw=true" alt="SCISSORS">
+                    </button>
+            </span>
+        </div>
+        <div class="result">
+            <p class="resultp" id="result-msg"></p>
+            <p class="resultp" id="winner-msg"></p>
+            <button type="button" class="lastbtn" id="resetbtn">Play Again</button>
+        </div>
+    </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
